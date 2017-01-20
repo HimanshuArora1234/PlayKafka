@@ -32,10 +32,8 @@ public class LogProducer {
         props.put("key.serializer", configuration.getString("kafka.serializer.class"));
         props.put("value.serializer", configuration.getString("kafka.serializer.class"));
         props.put("acks", configuration.getString("kafka.request.required.acks"));
-        props.put("metadata.fetch.timeout.ms", "300");
-        props.put("timeout.ms", "300");
         props.put("reconnect.backoff.ms", "10000");
-        props.put("retry.backoff.ms", "10000");
+        props.put("metadata.fetch.timeout.ms", "60000");
         topicName = configuration.getString("kafka.topicName");
         enable = configuration.getBoolean("kafka.log.enable");
         try {
