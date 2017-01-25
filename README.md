@@ -1,6 +1,6 @@
 A Play/java8 POC project to activate Ebean cache and send application endpoint logs to kafka broker passing through an akka actor. 
 
- ## Stack technique 
+ **Stack technique** 
    - Java8
    - Play Framework
    - Akka actor
